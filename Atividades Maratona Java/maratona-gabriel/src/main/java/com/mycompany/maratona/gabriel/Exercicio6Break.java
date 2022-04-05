@@ -12,6 +12,7 @@ public class Exercicio6Break {
             System.out.println(parcela + "Parcelas de " + "R$" + valorParcela);
 
         }
+       
     }
 
 }
