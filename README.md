@@ -14,3 +14,8 @@ que foi um dos mais interessantes que eu achei, usando " : " dentro do For, para
 também o famoso Orientação a Objeto e a coesão entre elas, separando cada classe com seu nome e organizando-os; Os métodos, 
 tanto com primitivos, com "this", etc. Os modificadores privados get e setters e contrutores.
 Parei na aula 62 (Métodos Estáticos).
+
+Dia 06/04
+Aprendi sobre associações e fiz um exercício também, demorou um pouco mais consegui. Relembrei um muito interessante
+que é a Herança, usando a palavra "extends". A sobreescrever com @override. E por último o modificador "final", deixando
+o método fixo pra sempre.
