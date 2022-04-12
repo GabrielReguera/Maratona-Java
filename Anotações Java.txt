@@ -1,0 +1,74 @@
+---Métodos---
+Final- não pode ser sobreescrito nas subclasses.
+
+Métodos Estáticos nunca vão ser sobreescritos, eles pertencem a classe.
+Interfaces por padrão é
+
+Abstract- Você força todas as subclasses a terem esse método, vira obrigatório elas escreverem.
+
+---Atributo---
+
+Final- Valor atribuido uma única vez, o "final int = 10" vai ser pra sempre 10.
+
+Static- Ele faz ser o mesmo valor pra todas as instâncias, se vc definir o "static int = 0" definir para " = 10" todos que chamarem vai possuir o 10.
+
+
+---CLASSES---
+Enum- Todos os atributos criados são constantes(Estaticos e Final). (Usado para as pessoas não passarem Strings Erradas, sempre se referenciando a classe. Exemplo: TipoCliente.PESSOA_FISICA.   
+
+Final- Não pode ser estendido(extends), não pode ter classes que herdam dela.
+
+Static- Um objeto não pode ser criado a partir dela, e ela possui apenas membros estáticos.(tudo dentro dela por padrão é static)
+
+Herança- usada pelo (extends), para herdar os atributos e métodos de uma classe. Não pode herdar mais que uma classe.
+
+Abstract- É tipo um template que você usa para as pessoas herdarem ela. Então em uma classe abstract "Funcionário" ela só vai ser de template para o "Gerente", o "Desenvolvedor", etc.
+
+---Interface---
+Ela serve como um contrato que quando assumido por uma classe ela deve ter todos os métodos e(ou) atributos.
+Todos os métodos são "public" e "abstract".
+Uma classe pode ter várias Interfaces.
+É utilizado na classe com o prefixo "implements".
+Tag "default" perimite criar um método não obrigatório pras classes interligadas.
+--------------
+
+---Errors---
+Erros-- são impossiveis arrumar com a aplicação andando, erro de memória por exemplo.
+
+Exception(checked)-- Erros de arquivos, se não arrumados, a aplicação nem roda.
+
+RunTimeException-- Quase 100% das vezes o erro foi feito por você. Não precisa ser feito a validação para aparecer a exceção.
+
+------------------------------
+"parse" transforma String em numeros.(Exemplo: "parseInt")
+
+Strings são Imutáveis, quando criado uma String, ela vai para a Poll, e reutiliza as Strings.
+
+
+---Date---
+
+SimpleDateFormat- Uma forma mais flexivel de editar a formatação, ("dd.mm.yyyy").
+LocalDate-- Bem simples, ela é imutável, introduzida no java 8, usado para data.
+
+LocalTime-- Parecido com a "LocalDate", usado para horas.
+
+LocalDateTime-- É praticamente uma junção das duas classes(data e hora).
+
+Date-- Ja está ultrapassado.
+
+Instant-- Trabalho com nanosegundos.
+
+Durantion-- Trabalho com quantidade de tempo, (pegar o tempo entre 2 datas por exemplo baseando se em horas, minutos e segundos). Não aceita local date pois não tem segundos.
+
+Period-- Parecido com a "Duration" mas ela trabalha com a Data.
+
+ChonoUnit-- Umas das formas mais praticas para trabalhar com tempo entre datas(anos, semandas, meses) e tempo(horas, segundos, minutos, etc).
+
+TemporalAdjusters-- Possui alguns métodos interessantes na ajuda com as datas, Exemplo: Saber que dia cai a próxima quinta-feira, "with(TemporalAsjusters.next(DayOfWeek.THURSDAY))".
+
+ZoneDateTime-- Ele trabalha com as zonas de datas/horas, pois os horários de outros lugares são diferentes de acordo com o UDT, Exemplo: Brasília é -03:00 do Udt, e o japão é -09:00.
+
+DataTimeFormatter-- método que formata a data em diferentes formas.( "DateTimeFormatter.ISO_DATE;" é igual a "2021-02-19+05:00" - ou "DateTimeFormatter.ofPattern("dd/MM/yyyy");"
+
+.parse -- Ele volta a formatação. ( "LocalDate.parse("19,Fevereiro,2021", formatterBr);" ele volta a data para "2021-02-19" que é a formatação padrão dele.
+
